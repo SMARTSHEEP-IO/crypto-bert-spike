@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "9f00035d-5d69-4683-9064-b9aee39d0c91",
+		"name": "CryptoBERT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2229321"
+	},
+	"item": [
+		{
+			"name": "sentiment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/sentiment?input=Hey guys...I need some help here. I've got to do a %23Bitcoin transaction and I'm not sure if this swimming pool is big enough or not. Any ideas? ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"sentiment"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "Hey guys...I need some help here. I've got to do a #Bitcoin transaction and I'm not sure if this swimming pool is big enough or not. Any ideas? "
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
