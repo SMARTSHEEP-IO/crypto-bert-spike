@@ -17,10 +17,18 @@ This project is powered with CryptoBERT, an advanced NLP sentiment analysis serv
 1. Python 3.11
 2. Docker Engine (Docker CE)
 3. Git
-4. Git LFS 
+4. Git LFS (Large File Storage)
 5. CryptoBERT pre-trained NLP model
 
 ## Quick Start
+
+### Windows Specific Notes!
+
+Windows users should use PowerShell or Git Bash for running the given shell commands.
+Ensure `Docker Desktop for Windows` is set to use `Linux` containers.
+For Windows systems, Python commands sometimes require using py instead of `python` or `python3`.
+
+
 ### Clone this repo
 ```commandline
 git clone git@github.com:SMARTSHEEP-IO/crypto-bert-spike.git
@@ -34,12 +42,11 @@ git clone https://huggingface.co/kk08/CryptoBERT
 ### Install Locally
 ```commandline
 pip3 install virtualenv
-
 python3.11 -m venv crbtenv
 
-
+source crbtenv/bin/activate
 pip3 install -r requirements.txt
-```source crbtenv/bin/activate
+```
 ### Run from terminal (manually)
 
 ```commandline
@@ -70,7 +77,6 @@ chmod +x run.sh
 curl -X GET "http://localhost:8001/sentiment/?input=" -H "Accept: application/json"
 
 curl -X GET http://localhost:8001/get_scores/ | json_pp
-
 ```
 
 ### Teardown the virtualenv
