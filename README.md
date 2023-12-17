@@ -119,7 +119,7 @@ If you use CryptoBERT with FastAPI and Docker in your research or project, pleas
 
 ```bibtex
 @misc{CryptoBERT_FastAPI_Docker,
-  author       = {Your Name and Contributors},
+  author       = {Iman Samizadeh},
   title        = {CryptoBERT with FastAPI and Docker: NLP Sentiment Analysis for Cryptocurrency},
   year         = {2023},
   publisher    = {GitHub},
